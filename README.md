@@ -3,6 +3,8 @@
 # Create Client App
 > Create a highly opinionated, but standardized borek.digital client app
 
+[![NPM version](https://img.shields.io/npm/v/@borek-digital/create-client-app.svg?style=flat)](https://www.npmjs.com/package/@borek-digital/create-client-app)
+
 ## Getting started
 > Make sure to have [yarn](https://classic.yarnpkg.com/en) (>= 1.10) installed
 ```bash
