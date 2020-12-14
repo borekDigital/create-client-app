@@ -1,0 +1,22 @@
+{
+  "name": "create-client-app",
+  "version": "0.0.1",
+  "description": "Create a borek.digital client app via cli in no time",
+  "bin": "lib/cli.js",
+  "files": [
+    "lib"
+  ],
+  "repository": "repo-url",
+  "dependencies": {
+    "cac": "^6.6.1",
+    "chalk": "^4.1.0",
+    "envinfo": "^7.7.3",
+    "sao": "^1.7.1",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "author": "borek.digital",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
