@@ -1,12 +1,12 @@
 {
-  "name": "create-client-app",
+  "name": "@borek-digital/create-client-app",
   "version": "0.0.1",
   "description": "Create a borek.digital client app via cli in no time",
   "bin": "lib/cli.js",
   "files": [
     "lib"
   ],
-  "repository": "repo-url",
+  "repository": "https://github.com/borekDigital/create-client-app",
   "dependencies": {
     "cac": "^6.6.1",
     "chalk": "^4.1.0",
