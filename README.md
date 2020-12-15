@@ -4,6 +4,7 @@
 > Create a highly opinionated, but standardized borek.digital client app
 
 [![NPM version](https://img.shields.io/npm/v/@borek-digital/create-client-app.svg?style=flat)](https://www.npmjs.com/package/@borek-digital/create-client-app)
+![NPM Publish](https://github.com/borekDigital/create-client-app/workflows/NPM%20Publish/badge.svg)
 
 ## Getting started
 > Make sure to have [yarn](https://classic.yarnpkg.com/en) (>= 1.10) installed
