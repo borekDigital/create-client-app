@@ -1,0 +1,47 @@
+@import '~vuetify/src/styles/settings/variables';
+@import './variables/typography';
+@import './variables/colors';
+
+.v-label {
+  font-size: #{14 / $font-size-root-normal}rem;
+}
+
+.v-input--selection-controls {
+  margin-top: $input-top-spacing / 2;
+}
+
+.v-btn.v-btn--contained {
+  box-shadow: none;
+}
+
+.v-card {
+  box-shadow: none;
+}
+
+.v-divider {
+  &__strong {
+    border-color: var(--v-primary) !important;
+  }
+}
+
+.v-chip.v-chip {
+  border-radius: 0;
+  border-style: solid;
+  border-width: thin;
+}
+
+.v-list--three-line .v-list-item,
+.v-list-item--three-line {
+  .v-list-item__avatar,
+  .v-list-item__action {
+    align-self: center;
+  }
+}
+
+.v-carousel {
+  &__controls {
+    &__item {
+      color: $palette-suva-grey !important;
+    }
+  }
+}

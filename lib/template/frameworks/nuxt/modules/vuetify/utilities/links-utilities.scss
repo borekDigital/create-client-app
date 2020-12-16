@@ -1,0 +1,8 @@
+// suppress active state for navigation items
+.suppress-active {
+  [class*='--active'] {
+    &:before {
+      opacity: 0 !important;
+    }
+  }
+}

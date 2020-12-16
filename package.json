@@ -1,6 +1,6 @@
 {
   "name": "@borek-digital/create-client-app",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Create a borek.digital client app via cli in no time",
   "bin": "lib/cli.js",
   "files": [

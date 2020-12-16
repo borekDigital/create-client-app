@@ -1,0 +1,64 @@
+@import '~vuetify/src/styles/settings/variables';
+@import './variables.scss';
+@import './utilities.scss';
+
+// HTML
+// ====
+html {
+  &.root-font-size-l {
+    font-size: #{$font-size-root-l}px;
+  }
+
+  &.root-font-size-xl {
+    font-size: #{$font-size-root-xl}px;
+  }
+}
+
+// Selection Coloring
+// ==================
+::-moz-selection {
+  background: $palette-dark-cerulean;
+  color: $palette-white;
+}
+
+::selection {
+  background: $palette-dark-cerulean;
+  color: $palette-white;
+}
+
+// Clickable Elements
+// ==================
+.clickable {
+  cursor: pointer;
+}
+
+// Remove Selection Highlighting
+// =============================
+.unselectable {
+  -webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* FF */
+	-ms-user-select: none; /* IE/Edge */
+	user-select: none; /* Chrome and Opera */
+}
+
+// Nuxt Layout and Page Transitions
+// See https://nuxtjs.org/api/configuration-transition
+// Based on Vuetify Transitions
+// See https://vuetifyjs.com/en/styles/transitions/
+// ===================================================
+.page-enter-active, .page-leave-active {
+  transition: $secondary-transition;
+}
+
+.page-enter, .page-leave-active {
+  opacity: 0;
+}
+
+.layout-enter-active, .layout-leave-active {
+  transition: $secondary-transition;
+}
+
+.layout-enter, .layout-leave-active {
+  opacity: 0;
+}

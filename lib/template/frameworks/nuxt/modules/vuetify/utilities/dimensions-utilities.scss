@@ -1,0 +1,33 @@
+@import '~vuetify/src/styles/settings/_variables.scss';
+
+// Width & Height Utilities
+// ========================
+
+$dimensions: 'width', 'height';
+$values: 25, 50, 75, 100, 'auto';
+
+.v-application {
+  @each $dimension in $dimensions {
+    @each $value in $values {
+      .#{$dimension}-#{$value} {
+        @if type-of($value) == "number" {
+          #{$dimension}: #{$value} + '%';
+        } @else {
+          #{$dimension}: #{$value};
+        }
+
+        @each $size, $media_query in $display-breakpoints {
+          &-#{$size} {
+            @media #{$media_query} {
+              @if type-of($value) == "number" {
+                #{$dimension}: #{$value} + '%';
+              } @else {
+                #{$dimension}: #{$value};
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

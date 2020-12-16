@@ -1,0 +1,42 @@
+{
+  "name": "client-app",
+  "version": "1.0.0",
+  "description": "A borek.digital client app based on Nuxt",
+  "private": true,
+  "scripts": {
+    "reset": "rm -rf ./node_modules ./.nuxt ./dist ./coverage",
+    "upgrade": "yarn reset && rm -rf ./yarn.lock && yarn",
+    "reset:template": "yarn reset && rm -rf ./nuxt.config.ts ./tsconfig.json",
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "lint": "eslint --ext .ts,.js,.vue .",
+    "lint:fix": "yarn lint --fix",
+    "test:unit": "jest"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^2.0.0",
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.6",
+    "nuxt-i18n": "^6.15.4",
+    "nuxt-property-decorator": "^2.7.2"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.6",
+    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-config-typescript": "^3.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/vuetify": "^1.11.2",
+    "@types/jest": "^26.0.13",
+    "@vue/test-utils": "^1.1.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.5.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "jest": "^26.5.0",
+    "ts-jest": "^26.4.1",
+    "vue-jest": "^3.0.4"
+  }
+}

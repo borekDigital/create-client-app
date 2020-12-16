@@ -1,0 +1,14 @@
+.git
+.idea
+.editorconfig
+.gitignore
+node_modules
+yarn-error.log
+
+**/README.md
+.nuxt
+dist
+
+docker
+.dockerignore
+!docker/entrypoint.sh

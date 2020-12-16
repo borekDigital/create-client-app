@@ -1,0 +1,200 @@
+@import '~vuetify/src/styles/tools/_functions.sass';
+@import './variables/colors';
+@import './variables/typography';
+
+// Additional Google Web Fonts
+// ===========================
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+// MDM Custom Variables
+// ======================
+$mdm-light-background: $palette-white;
+$mdm-light-brand: $palette-suva-grey;
+$mdm-light-primary: $palette-black;
+$mdm-light-primary-inverted: $palette-white;
+$mdm-light-secondary: $palette-dark-cerulean;
+$mdm-light-accent: $palette-lipstick;
+$mdm-light-anchor: #05477A;
+$mdm-light-error: #EB5757;
+$mdm-light-info: #0584BF;
+$mdm-light-success: #4DBA87;
+$mdm-light-waning: #FFC107;
+$mdm-light-collection: #BEA53E;
+$mdm-light-article: #BD5E01;
+
+$mdm-dark-background: $palette-black;
+$mdm-dark-brand: $palette-suva-grey;
+$mdm-dark-primary: $palette-white;
+$mdm-dark-primary-inverted: $palette-black;
+$mdm-dark-secondary: #0584BF;
+$mdm-dark-accent: #D82748;
+$mdm-dark-anchor: #FFFFFF;
+$mdm-dark-error: #EB5757;
+$mdm-dark-info: #0584BF;
+$mdm-dark-success: #4DBA87;
+$mdm-dark-waning: #FFC107;
+$mdm-dark-collection: #BEA53E;
+$mdm-dark-article: #BD5E01;
+
+// Vuetify Preset Variables
+// ========================
+
+// themes
+$material-light: (
+  'app-bar': $mdm-light-background,
+  'background': $mdm-light-background,
+  'chips': $mdm-light-background,
+  'text': (
+    'primary': $mdm-light-primary
+  )
+);
+
+$material-dark: (
+  'app-bar': $mdm-dark-background,
+  'background': $mdm-dark-background,
+  'chips': $mdm-dark-background,
+  'text': (
+    'primary': $mdm-dark-primary
+  )
+);
+
+// typography
+$font-size-root: $font-size-root-normal;
+$body-font-family: $font-family-main;
+$heading-font-family: $font-family-main;
+
+$headings: () !default;
+$headings: map-deep-merge(
+    (
+      'h1':(
+        'font-family': $heading-font-family,
+        'letter-spacing': initial,
+        'line-height': inherit,
+        'size': #{40 / $font-size-root-normal}rem,
+        'weight': 700,
+      ),
+      'h2':(
+        'font-family': $heading-font-family,
+        'letter-spacing': 1px,
+        'line-height': inherit,
+        'size': #{32 / $font-size-root-normal}rem,
+        'weight': 700,
+      ),
+      'h3':(
+        'font-family': $heading-font-family,
+        'letter-spacing': 1px,
+        'line-height': inherit,
+        'size': #{24 / $font-size-root-normal}rem,
+        'weight': 700,
+      ),
+      'h4':(
+        'font-family': $body-font-family,
+        'letter-spacing': initial,
+        'line-height': inherit,
+        'size': #{20 / $font-size-root-normal}rem,
+        'weight': 700,
+      ),
+      'h5':(
+        'font-family': $body-font-family,
+        'letter-spacing': initial,
+        'line-height': inherit,
+        'size': #{18 / $font-size-root-normal}rem,
+        'weight': 700,
+      ),
+      'h6':(
+        'font-family': $body-font-family,
+        'letter-spacing': initial,
+        'line-height': inherit,
+        'size': #{16 / $font-size-root-normal}rem,
+        'weight': 700,
+      ),
+      'subtitle-1':(
+        'font-family': $body-font-family,
+        'letter-spacing': initial,
+        'line-height': inherit,
+        'size': #{16 / $font-size-root-normal}rem,
+        'weight': 500
+      ),
+      'subtitle-2':(
+        'font-family': $heading-font-family,
+        'letter-spacing': initial,
+        'line-height': inherit,
+        'size': #{14 / $font-size-root-normal}rem,
+        'weight': 500
+      ),
+      'body-1':(
+        'font-family': $body-font-family,
+        'letter-spacing': initial,
+        'line-height': inherit,
+        'size': #{16 / $font-size-root-normal}rem,
+        'weight': 400
+      ),
+      'body-2':(
+        'font-family': $body-font-family,
+        'letter-spacing': initial,
+        'line-height': inherit,
+        'size': #{14 / $font-size-root-normal}rem,
+        'weight': 400
+      ),
+      'caption':(
+        'font-family': $heading-font-family,
+        'letter-spacing': initial,
+        'line-height': inherit,
+        'size': #{12 / $font-size-root-normal}rem,
+        'weight': 400
+      ),
+      'overline':(
+        'font-family': $body-font-family,
+        'letter-spacing': initial,
+        'line-height': inherit,
+        'size': #{10 / $font-size-root-normal}rem,
+        'weight': 700
+      )
+    ),
+    $headings
+);
+
+// breakpoints
+$grid-breakpoints: () !default;
+$grid-breakpoints: map-deep-merge(
+    (
+      'xs': 0,
+      'sm': 600px,
+      'md': 960px,
+      'lg': 1105px - 16px,
+      'xl': 1105px - 16px
+    ),
+    $grid-breakpoints
+);
+
+// container max widths
+$container-max-widths: () !default;
+$container-max-widths:
+  (
+    'sm': map-get($grid-breakpoints, 'sm') * 0.9375,
+    'md': map-get($grid-breakpoints, 'md') * 0.9375!important,
+    'lg': map-get($grid-breakpoints, 'lg') * 0.9375!important,
+    'xl': map-get($grid-breakpoints, 'xl') * 0.9375!important
+  );
+
+// form inputs
+$text-field-dense-icon-append-prepend-margin-top: 0;
+
+// buttons
+$btn-font-weight: 400;
+$btn-text-transform: none;
+$btn-letter-spacing: normal;
+
+$fab-sizes: () !default;
+$fab-sizes: map-deep-merge(
+  (
+    'x-small': 20,
+    'small': 28,
+    'default': 36,
+    'large': 44,
+    'x-large': 52
+  ),
+  $fab-sizes
+);
+
+$icon-outlined-border-width: 2px;

@@ -1,0 +1,29 @@
+<v-app-bar
+  app
+  elevation="1"
+  prominent
+  scroll-off-screen
+>
+  <v-container class="py-0 fill-height">
+    <v-row no-gutters>
+      <v-col
+        cols="12"
+        md="4"
+        order="2"
+        order-md="1"
+        class="d-flex flex-column flex-md-row align-center"
+      >
+        <AppHomeLink />
+      </v-col>
+      <v-col
+        cols="12"
+        md="4"
+        order="1"
+        order-md="2"
+        class="text-center"
+      >
+        <AppLogo :size="breakpoint.mdAndUp ? 80 : 60" />
+      </v-col>
+    </v-row>
+  </v-container>
+</v-app-bar>
