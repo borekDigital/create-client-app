@@ -4,7 +4,7 @@
   "description": "A borek.digital client app based on Nuxt",
   "private": true,
   "engines": {
-    "node": "14.x"
+    "node": ">=14.x"
   },
   "scripts": {
     "reset": "rm -rf ./node_modules ./.nuxt ./dist ./coverage",
