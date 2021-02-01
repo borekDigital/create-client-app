@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A borek.digital client app based on Nuxt",
   "private": true,
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "reset": "rm -rf ./node_modules ./.nuxt ./dist ./coverage",
     "upgrade": "yarn reset && rm -rf ./yarn.lock && yarn",
@@ -12,7 +15,8 @@
     "start": "nuxt-ts start",
     "lint": "eslint --ext .ts,.js,.vue .",
     "lint:fix": "yarn lint --fix",
-    "test:unit": "jest"
+    "test:unit": "jest",
+    "test": "jest"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",

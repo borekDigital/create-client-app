@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.2 (2021-01-31)
+
+### Auto Devops / buildpack compatibility
+* specify node engine version in package.json
+* switch to 5000 as default port
+* provide default test command
+
+
 ## 0.1.1 (2020-12-18)
 
 ### Fixed
